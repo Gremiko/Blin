@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/media.css" />
+    <title>Можайский Теремок</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="info">
+            <div class="box1">
+              <div class="logo">
+                <img src="image/logo.png" alt="" />
+              </div>
+              <div class="box1-text">
+                <h2 class="title">Блинная в Можайске</h2>
+                <p>Кафе для всей семьи!</p>
+              </div>
+            </div>
+            <div class="box2">
+              <img src="image/paper-bag.svg" alt="" />
+              <p>
+                Бесплатная доставка в<br />
+                Можайске при заказе от 300Р<br />📍 г. Можайск ул. Красных
+                партизан д.1
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrap">
+          <div class="container">
+            <nav>
+              <ul class="menu">
+                <button class="burger" onclick="openModal()"></button>
+                <li><a href="#">Блины 🥞</a></li>
+                <li><a href="#">Пельмени 🥟</a></li>
+                <li><a href="#">Супы 🥣</a></li>
+                <li><a href="#">Второе 🍝</a></li>
+                <li><a href="#">Салаты 🥗</a></li>
+                <li><a href="#">Завтраки 🍳</a></li>
+                <li><a href="#">Десерты 🍰</a></li>
+                <li><a href="#">Напитки 🍹</a></li>
+                <li><a href="#">Добавки 🥯</a></li>
+                <button class="basket">
+                  <span>🛒 Корзина | </span>
+                  <span class="count">0</span>
+                </button>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="promo">
+            <img src="image/menu.svg" alt="" />
+            <div class="promo-text">
+              <p class="title-promo">
+                Бесплатная доставка в Можайске при заказе от 300 руб.
+              </p>
+              <p class="text-promo">
+                Вы можете оформить заказ на сайте и курьер привезет его в
+                течение 120 минут!
+              </p>
+            </div>
+          </div>
+          <div class="handle">
+          <p class="down">👇</p>
+        </div>
+          <div class="card">
+            <div class="item item1">
+              <span>🥞 Блины</span>
+            </div>
+            <div class="item item2">
+              <span>🥟 Пельмени</span>
+            </div>
+            <div class="item item3">
+              <span>🥗 Салаты</span>
+            </div>
+            <div class="item item4">
+              <span>🥣 Супы</span>
+            </div>
+            <div class="item item5">
+              <span>🍝 Вторые блюда</span>
+            </div>
+            <div class="item item6">
+              <span>🍰 Десерты</span>
+            </div>
+            <div class="item item7">
+              <span>🍹 Напитки</span>
+            </div>
+          </div>
+        </div>
+        <div class="yandex-map">
+          <div class="container">
+            <hr />
+            <div class="delivery">
+              <img src="image/paper-bag.svg" alt="" />
+              <div class="delivery-text">
+                <p class="title-delivery">
+                  Бесплатная доставка в Можайске при заказе от 300 руб.
+                </p>
+                <p class="text-delivery">
+                  Вы можете оформить заказ на сайте и курьер привезет его в
+                  течение 120 минут!
+                </p>
+              </div>
+            </div>
+            <hr />
+            <h1 class="title-map">Ждем Вас в нашем кафе по адресу:</h1>
+            <h2 class="text-map">г. Можайск ул. Красных партизан д.1</h2>
+            <div class="wrp">
+              <div class="map-box">
+                <h2>Наши контакты</h2>
+                <p>📍г. Можайск ул. Красных партизан д.1</p>
+                <p>
+                  <a href="tel:+7 (925)-974-33-15">📞 +7 (925)-974-33-15</a>
+                </p>
+              </div>
+            </div>
+            <div class="map-wrapper">
+              <div id="yandexmap"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="footer">
+            <h2 class="footer-title">Блинная в Можайске</h2>
+            <p class="footer-text">
+              Первая блинная в Можайске! Мы работаем<br />
+              каждый день с 9:00 до 21:00. Ждем Вас по<br />
+              адресу г. Можайск ул. Красных партизан д.1.<br />
+              Также Вы можете оформить заказ на сайте, и<br />
+              мы привезем его в течение 120 минут!
+            </p>
+            <p class="social-text">Наши социальные сети:</p>
+            <div class="social">
+              <img src="image/icon/VK.svg" alt="vk" class="icon" />
+              <img
+                src="image/icon/Instagram.svg"
+                alt="in"
+                class="icon icon-m"
+              />
+              <img src="image/icon/YouTube.svg" alt="yt" class="icon" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <img src="image/logo.png" alt="" />
+        <button
+          class="burger-close"
+          id="modal-close"
+          onclick="closeModal()"
+        ></button>
+      </div>
+      <nav>
+        <ul class="modal-menu">
+          <li><a href="#">Блины</a> 🥞</li>
+          <li><a href="#">Пельмени</a> 🥟</li>
+          <li><a href="#">Супы</a> 🥣</li>
+          <li><a href="#">Второе</a> 🍝</li>
+          <li><a href="#">Салаты</a> 🥗</li>
+          <li><a href="#">Завтраки</a> 🍳</li>
+          <li><a href="#">Десерты</a> 🍰</li>
+          <li><a href="#">Напитки</a> 🍹</li>
+          <li><a href="#">Добавки</a> 🥯</li>
+          
+        </ul>
+      
+      <div class="modal-footer">
+        
+        <div class="modal-wrapper">
+        <p class="social-text">Наши социальные сети:</p>
+        <div class="social">
+          <img src="image/icon/VK.svg" alt="vk" class="icon" />
+          <img
+            src="image/icon/Instagram.svg"
+            alt="in"
+            class="icon icon-m"
+          />
+          <img src="image/icon/YouTube.svg" alt="yt" class="icon" />
+        </div>
+      </div>
+      </div>
+    </div>
+    <script src="//api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
